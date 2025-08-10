@@ -1,4 +1,4 @@
-DAY 1
+# DAY 1
 
 Variable and Data types -
  
@@ -17,7 +17,3 @@ Literals in Java -
     double do=20.22d;
 
     char a=’v’
-
-Array -
-
-
