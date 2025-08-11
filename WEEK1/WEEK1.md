@@ -1,23 +1,26 @@
-DAY 1
+# WEEK 1
 
-Variable and Data types -
- 
- Data types - 1. Primitive - byte, int, short, long, float, double, bool,char
-              2. Non-Primitive - string, array etc.
- variable - 1. Local Variable - define with in the func.
-            2. Instance Variable - These variables are specific to each instance of a class and are known as instance variables.
-            3. Static variable - These variables are shared among all instances of a class and are initialized before any instance variables. 
+## Day 1:
 
-Literals in Java - 
+### IDE Setup
 
-    int a=2,b=4,c=6;
+Java Setup
+Eclipse/VS cpde Setup
 
-    float pi=3.14f; // by default double 
+### Variables - Assignment & Usage
 
-    double do=20.22d;
+Literals, Assignments & Variables
+Passing Variables to Methods
+Arrays
+Wrapper Classes
+instanceof Keyword
 
-    char a=’v’
+### Control Flow Statements & Loops:
 
-Array -
+If and Switch Statements
+Loops & Iterators
 
+### Working with Strings, Arrays
 
+The String Class. Java Immutable wrapper classes
+Using String, StringBuilder and StringBuffer
