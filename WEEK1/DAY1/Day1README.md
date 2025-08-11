@@ -154,48 +154,50 @@ public StringJoiner(CharSequence delimiter)
 
 The Java String class provides a rich set of methods for manipulating and querying strings. These methods offer functionalities for various operations, including:
 Information Retrieval:
-length(): Returns the number of characters in the string.
-charAt(int index): Returns the character at the specified index.
-indexOf(String str) / indexOf(int ch): Returns the index of the first occurrence of a specified substring or character.
-lastIndexOf(String str) / lastIndexOf(int ch): Returns the index of the last occurrence of a specified substring or character.
-isEmpty(): Checks if the string is empty.
+1. length(): Returns the number of characters in the string.
+2. charAt(int index): Returns the character at the specified index.
+3. indexOf(String str) / indexOf(int ch): Returns the index of the first occurrence of a specified substring or character.
+4. lastIndexOf(String str) / lastIndexOf(int ch): Returns the index of the last occurrence of a specified substring or    character.
+5. isEmpty(): Checks if the string is empty.
 Comparison:
-equals(Object obj): Compares two strings for equality (case-sensitive).
-equalsIgnoreCase(String anotherString): Compares two strings for equality, ignoring case differences.
-compareTo(String anotherString): Compares two strings lexicographically.
-compareToIgnoreCase(String anotherString): Compares two strings lexicographically, ignoring case differences.
-startsWith(String prefix) / startsWith(String prefix, int offset): Checks if the string starts with a specified prefix.
-endsWith(String suffix): Checks if the string ends with a specified suffix.
-contains(CharSequence s): Checks if the string contains a specified sequence of characters. 
+1. equals(Object obj): Compares two strings for equality (case-sensitive).
+2. equalsIgnoreCase(String anotherString): Compares two strings for equality, ignoring case differences.
+3. compareTo(String anotherString): Compares two strings lexicographically.
+4. compareToIgnoreCase(String anotherString): Compares two strings lexicographically, ignoring case differences.
+5. startsWith(String prefix) / startsWith(String prefix, int offset): Checks if the string starts with a specified prefix.
+6. endsWith(String suffix): Checks if the string ends with a specified suffix.
+7. contains(CharSequence s): Checks if the string contains a specified sequence of characters. 
 Manipulation:
-concat(String str): Concatenates two strings.
-substring(int beginIndex) / substring(int beginIndex, int endIndex): Extracts a substring.
-replace(char oldChar, char newChar): Replaces all occurrences of a character with another.
-replaceAll(String regex, String replacement): Replaces all substrings matching a regular expression.
-replaceFirst(String regex, String replacement): Replaces the first matching substring.
-trim(): Removes leading and trailing whitespace.
-toLowerCase(): Converts all characters to lowercase.
-toUpperCase(): Converts all characters to uppercase.
-split(String regex): Splits the string into an array of strings based on a delimiter.
-join(CharSequence delimiter, CharSequence... elements): Joins multiple strings with a specified delimiter.
+1. concat(String str): Concatenates two strings.
+2. substring(int beginIndex) / substring(int beginIndex, int endIndex): Extracts a substring.
+3. replace(char oldChar, char newChar): Replaces all occurrences of a character with another.
+4. replaceAll(String regex, String replacement): Replaces all substrings matching a regular expression.
+5. replaceFirst(String regex, String replacement): Replaces the first matching substring.
+6. trim(): Removes leading and trailing whitespace.
+7. toLowerCase(): Converts all characters to lowercase.
+8. toUpperCase(): Converts all characters to uppercase.
+9. split(String regex): Splits the string into an array of strings based on a delimiter.
+10. join(CharSequence delimiter, CharSequence... elements): Joins multiple strings with a specified delimiter.
 Conversion:
-toCharArray(): Converts the string to a character array.
-getBytes(): Encodes the string into a sequence of bytes.
-valueOf(various_types): Converts various data types to their string representation.
-format(String format, Object... args): Returns a formatted string.
+1. toCharArray(): Converts the string to a character array.
+2. getBytes(): Encodes the string into a sequence of bytes.
+3. valueOf(various_types): Converts various data types to their string representation.
+4. format(String format, Object... args): Returns a formatted string.
 
 **StringBuilder** and **StringBuffer** in Java share a nearly identical set of methods for manipulating mutable sequences of characters. The primary difference lies in their thread-safety: StringBuffer methods are synchronized (thread-safe), while StringBuilder methods are not (faster in single-threaded environments).
+
 Here are some of the common methods available in both StringBuilder and StringBuffer:
-append(): Appends various data types (strings, characters, integers, booleans, etc.) to the end of the sequence.
-insert(): Inserts a specified value at a given index within the sequence.
-delete(): Deletes a portion of the sequence between a specified start and end index.
-deleteCharAt(): Deletes the character at a specific index.
-replace(): Replaces a portion of the sequence with a new string.
-reverse(): Reverses the order of characters in the sequence.
-charAt(): Returns the character at a specified index.
-setCharAt(): Sets the character at a specified index to a new character.
-length(): Returns the current length (number of characters) of the sequence.
-capacity(): Returns the current capacity of the buffer (the amount of storage available for characters).
-ensureCapacity(): Ensures that the capacity is at least equal to the given minimum.
-substring(): Returns a new String object containing a portion of the sequence.
-toString(): Converts the StringBuilder or StringBuffer object into a String object.
+
+1. append(): Appends various data types (strings, characters, integers, booleans, etc.) to the end of the sequence.
+2. insert(): Inserts a specified value at a given index within the sequence.
+3. delete(): Deletes a portion of the sequence between a specified start and end index.
+4. deleteCharAt(): Deletes the character at a specific index.
+5. replace(): Replaces a portion of the sequence with a new string.
+6. reverse(): Reverses the order of characters in the sequence.
+7. charAt(): Returns the character at a specified index.
+8. setCharAt(): Sets the character at a specified index to a new character.
+9. length(): Returns the current length (number of characters) of the sequence.
+10. capacity(): Returns the current capacity of the buffer (the amount of storage available for characters).
+11. ensureCapacity(): Ensures that the capacity is at least equal to the given minimum.
+12. substring(): Returns a new String object containing a portion of the sequence.
+13. toString(): Converts the StringBuilder or StringBuffer object into a String object.
