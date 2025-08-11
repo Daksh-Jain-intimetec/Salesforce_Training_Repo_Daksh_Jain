@@ -24,3 +24,17 @@ Loops & Iterators
 
 The String Class. Java Immutable wrapper classes
 Using String, StringBuilder and StringBuffer
+
+## DAY 2 - OOPS
+
+1. Encapsulation
+
+2. Inheritance  
+
+3. Polymorphism
+
+4. Overriding / Overloading
+
+5. Overloaded Methods
+
+6. Overridden Methods
