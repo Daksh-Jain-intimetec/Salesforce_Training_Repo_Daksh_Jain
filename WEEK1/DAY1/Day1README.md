@@ -201,3 +201,19 @@ Here are some of the common methods available in both StringBuilder and StringBu
 11. ensureCapacity(): Ensures that the capacity is at least equal to the given minimum.
 12. substring(): Returns a new String object containing a portion of the sequence.
 13. toString(): Converts the StringBuilder or StringBuffer object into a String object.
+
+## Daily Practice Assignments
+
+1. Take 10 integer inputs from user and store them in an array. Now, copy all the elements in an another array but in reverse order. (**ANSWER - CodeDPA1**)
+2. Write a program to provide 20 % discount to Premium plan Subscribers and for normal user 5 % discount.
+How to find duplicate characters in a String? (**Answer - CodeDPA2,CodeDPA3**)
+3. Why string is not used for storing the passwords rather a char array is preferred for the same.
+Ans-
+1. Strings are immutable
+Once a String is created in Java, it cannot be changed.
+This means the password stays in memory until garbage collected, and you cannot manually erase it.
+2. Strings stay in memory longer
+Because of immutability and string pooling, passwords stored as String may remain in memory longer than necessary.
+This increases the risk of memory dump attacks, where sensitive data could be exposed.
+3. char[] can be cleared manually
+You can overwrite the contents of a char[] after you're done using it:
