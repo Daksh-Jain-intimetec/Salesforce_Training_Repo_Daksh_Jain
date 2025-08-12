@@ -37,3 +37,9 @@ Method Overloading - when multiple methods in the same class have the same name 
 Method Overriding - when a subclass provides a specific implementation of a method that is already defined in its > >  superclass. The method in the subclass must have the same name, return type, and parameters as the method in the  superclass. Method overriding allows a subclass to modify or extend the behavior of an existing method in the parent >  class.
 
 #### Code to Show Method overriding (Runtime Polymorphism).
+
+## Daily Practice Assignments
+
+1. Write a program to override a plan for specific sets of users.
+   For example → Provide some extra advantage to prime users. (**Ans - CodeDPA1**)
+2. Write a program to demonstrate runtime polymorphism and Compile time polymorphism.(**Ans - CodeDPA2** - Hero fight game.)
