@@ -1,4 +1,4 @@
-package Salesforce_Training_Repo_Daksh_Jain.WEEK1.DAY2;
+package WEEK1.DAY2;
 class MathOperations {
     public int add(int a, int b) {
         return a + b;

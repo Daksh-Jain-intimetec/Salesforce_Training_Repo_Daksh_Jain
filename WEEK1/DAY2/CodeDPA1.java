@@ -1,4 +1,5 @@
-package Salesforce_Training_Repo_Daksh_Jain.WEEK1.DAY2;
+package WEEK1.DAY2;
+
 import java.util.*;
 class Member {
     public int ticketPrice = 1000;

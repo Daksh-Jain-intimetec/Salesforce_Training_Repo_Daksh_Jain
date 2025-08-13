@@ -208,12 +208,4 @@ Here are some of the common methods available in both StringBuilder and StringBu
 2. Write a program to provide 20 % discount to Premium plan Subscribers and for normal user 5 % discount.
 How to find duplicate characters in a String? (**Answer - CodeDPA2,CodeDPA3**)
 3. Why string is not used for storing the passwords rather a char array is preferred for the same.
-Ans-
-1. Strings are immutable
-Once a String is created in Java, it cannot be changed.
-This means the password stays in memory until garbage collected, and you cannot manually erase it.
-2. Strings stay in memory longer
-Because of immutability and string pooling, passwords stored as String may remain in memory longer than necessary.
-This increases the risk of memory dump attacks, where sensitive data could be exposed.
-3. char[] can be cleared manually
-You can overwrite the contents of a char[] after you're done using it:
+Ans- Strings are immutable. Once a String is created in Java, it cannot be changed. This means the password stays in memory until garbage collected, and you cannot manually erase it.Strings stay in memory longer. Because of immutability and string pooling, passwords stored as String may remain in memory longer than necessary. This increases the risk of memory dump attacks, where sensitive data could be exposed. char[] can be cleared manually. You can overwrite the contents of a char[] after you're done using it:

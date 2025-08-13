@@ -38,3 +38,9 @@ Using String, StringBuilder and StringBuffer
 5. Overloaded Methods
 
 6. Overridden Methods
+
+## Day 3
+
+1. Abstraction and Interfaces
+
+2. IS-A / HAS-A relationships between objects
