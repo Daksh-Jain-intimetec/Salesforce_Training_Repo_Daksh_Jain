@@ -11,6 +11,7 @@ class Banking{
     }
 
     public double GetBalance(){
+        System.out.println("Hii " + HolderName + " Your balance is : ");
         return balance;
     }
 

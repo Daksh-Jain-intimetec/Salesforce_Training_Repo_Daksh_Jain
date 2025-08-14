@@ -42,8 +42,26 @@ It is used to achieve loose coupling.
 
 ### How to declare an interface?
 
+## IS-A and HAS-A Relationship
+
 An interface is declared by using the interface keyword. It provides total abstraction; it means all the methods in an interface are declared with an empty body, and all the fields are public, static and final by default. A class that implements an interface must implement all the methods declared in the interface.
+
+A relationship in Java means different relations between two or more classes. For example, if a class Bulb inherits another class Device, then we can say that Bulb is having is-a relationship with Device, which implies Bulb is a device.  
+
+In Java, we have two types of relationship:
+
+1. Is-A relationship: Whenever one class inherits another class, it is called an IS-A relationship.
+2. Has-A relationship: Whenever an instance of one class is used in another class, it is called HAS-A relationship.
+
+**Is-A relationship** 
+
+IS-A Relationship is wholly related to Inheritance. For example - a kiwi is a fruit; a bulb is a device.
+IS-A relationship can simply be achieved by using extends Keyword.
+IS-A relationship is additionally used for code reusability in Java and to avoid code redundancy.
+IS-A relationship is unidirectional, which means we can say that a bulb is a device, but vice versa; a device is a bulb is not possible since all the devices are not bulbs.
+IS-A relationship is tightly coupled, which means changing one entity will affect another entity.
 
 ## Daily Practice Assigments
 
 ### Write a program to demonstrate interface use for different networks (2G, 3G, 4G and 5G). (**Day3Code1DPA1**)
+
