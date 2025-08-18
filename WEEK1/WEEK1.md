@@ -25,7 +25,7 @@ Loops & Iterators
 The String Class. Java Immutable wrapper classes
 Using String, StringBuilder and StringBuffer
 
-## DAY 2 - OOPS
+## DAY 2: - OOPS
 
 1. Encapsulation
 
@@ -39,8 +39,32 @@ Using String, StringBuilder and StringBuffer
 
 6. Overridden Methods
 
-## Day 3
+## Day 3:
 
 1. Abstraction and Interfaces
 
-2. IS-A / HAS-A relationships between objects
+2. IS-A / HAS-A relationships between objects.
+
+## Day 4:
+
+Upcasting and Downcasting
+Implementing an Interface
+Legal Return Types
+Return Type Declarations
+Returning a Value
+Constructors and Instantiation
+Overloaded Constructors
+
+## Day 5:
+
+Memory Management:
+How do computers use memory?
+How does a computer program use memory?
+Stack and Heap Memory
+Garbage Collection
+
+# WEEK ASSIGNMENT:
+
+Prepare Modal classes to store User Information, Available plans, Employee Details.
+Create Enum for categories of Employee and use that. 
+Write a program to add users, employees and plans to a System
