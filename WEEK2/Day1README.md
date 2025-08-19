@@ -65,3 +65,36 @@ java.lang.Error: Represents serious problems that are not meant to be caught by 
 java.lang.Exception: Represents conditions that a program might want to catch and handle. This class is further divided into two categories:
 1. Checked Exceptions: Direct subclasses of Exception (excluding RuntimeException). The compiler checks that your code handles these. Examples: IOException, SQLException.
 2. Unchecked Exceptions (Runtime Exceptions): Subclasses of java.lang.RuntimeException. The compiler does not force you to handle these as they often reflect logic errors in the code. Examples: NullPointerException, ArithmeticException.
+
+## Daily Practise Assignment
+
+**Day1DPA1(correct format)- Is it possible to catch Exception before catching NullPointerException in single try-catch block?**
+
+It is not possible to catch Exception before NullPointerException in a single try-catch block, because it makes the NullPointerException catch block unreachable, and Java does not allow unreachable code.
+
+try {
+    String s = null;
+    System.out.println(s.length());  // Causes NullPointerException
+} catch (Exception e) {  // Parent class
+    System.out.println("Caught general exception");
+} catch (NullPointerException e) {  // Child class
+    System.out.println("Caught null pointer");
+}
+
+Error: NullPointerException is unreachable because Exception already catches it.
+
+**TryCatchFinally.java - Write a program using try catch and finally bock.** 
+
+**How should the Exception catch blocks be ordered ?**
+
+__Rule for Ordering Catch Blocks__
+
+1. Most specific exceptions first
+Place child (subclass) exceptions before their parent (superclass) exceptions.
+Example: NullPointerException (child of RuntimeException → child of Exception).
+
+2. More general exceptions later
+Place parent classes like RuntimeException, then Exception, then Throwable at the end.
+
+3. Unrelated exceptions
+If two exceptions are not in the same hierarchy branch, order doesn’t matter.

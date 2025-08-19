@@ -1,4 +1,4 @@
-package WEEK2.DAY1;
+package WEEK2;
 
 public class Exceptionhandling1 {
     public static void main(String[] args) {

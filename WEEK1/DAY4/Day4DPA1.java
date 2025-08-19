@@ -12,7 +12,7 @@ class Build implements Builder{
 public class Day4DPA1 {
     public static void main(String[] args) {
         Build a = new Build();
-        System.out.println("Cannot Compile");
+        System.out.println("Cannot Compile " + a);
     }
 }
 // give compile time error "The final field A.i cannot be assigned"
