@@ -40,8 +40,10 @@ class BankAccount{
 }
 class BankCreditCard extends BankAccount{
     private double cardBalance = 200000;
+    protected String Name = null;
     public BankCreditCard(String Name, double balance) {
         super(Name, balance);
+        this.Name = Name;
     }
     public void getCardInfo(){
         System.out.println("CARD HOLDER NAME: "+ super.Name);
@@ -92,12 +94,7 @@ public class UnsupportedOperationException1{
                         account1.providentFund(pfamount);
                         System.out.println("PF balance: "+ account1.ProvidentFund);
                         break;
-                case 3: try{BankCreditCard card = (BankCreditCard) account1; card.getCardInfo();}
-                        catch (ClassCastException c){
-                            System.out.println("Card Service Not Available..");
-                        }finally{
-                            a = false;
-                        }
+                case 3: BankCreditCard card = (BankCreditCard) account1; card.getCardInfo();
                         break;
                 case 4: System.out.println("Enter amount to Credit: ");
                         double num = sc.nextDouble();
