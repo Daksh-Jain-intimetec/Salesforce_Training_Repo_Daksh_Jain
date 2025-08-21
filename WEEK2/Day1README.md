@@ -205,3 +205,5 @@ try {
     new MyClass(); 
 } catch (Throwable t) {} 
 new MyClass();
+java.lang.ExceptionInInitializerError
+Caused by: java.util.regex.PatternSyntaxException: Unclosed group near index 1 (

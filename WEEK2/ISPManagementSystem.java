@@ -42,7 +42,10 @@ public class ISPManagementSystem {
         try{
             verify(CSID);
         }catch(CustomerNotFoundException e ) {
-            System.out.println(" Billing verification failed. Error Caught in Main()" + e.getMessage());
+            System.out.println(" Billing verification failed. Error Caught in Main() " + e.getMessage());
+        }
+        finally{
+            sc.close();
         }
     }
 

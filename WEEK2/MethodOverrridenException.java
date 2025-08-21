@@ -12,7 +12,6 @@ class parent{
     }
 }
 class child extends parent{
-    @Override
     public String large(String s) throws FileNotFoundException{ // FileNotFoundException is sub class of IOExecption
         if(s.length()<4){
             throw new FileNotFoundException("File not Found, Enter More than 3 Character");

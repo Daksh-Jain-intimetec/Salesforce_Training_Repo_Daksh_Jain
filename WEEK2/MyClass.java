@@ -9,7 +9,7 @@ class MyClass {
         try {
             new MyClass();
         } catch (Throwable t) {}
-        new MyClass();
+        finally{new MyClass();}
     }
 
 }
