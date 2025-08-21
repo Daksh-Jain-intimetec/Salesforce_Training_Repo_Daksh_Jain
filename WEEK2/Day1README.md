@@ -165,7 +165,7 @@ Whenever you use throw, you must provide an instance of Throwable class or its s
 
 **Day1DPA1(correct format)- Is it possible to catch Exception before catching NullPointerException in single try-catch block?**
 
-**It is not possible to catch Exception before NullPointerException in a single try-catch block, because it makes the NullPointerException catch block unreachable, and Java does not allow unreachable code.**
+ANS- It is not possible to catch Exception before NullPointerException in a single try-catch block, because it makes the NullPointerException catch block unreachable, and Java does not allow unreachable code.
 
 try {
     String s = null;

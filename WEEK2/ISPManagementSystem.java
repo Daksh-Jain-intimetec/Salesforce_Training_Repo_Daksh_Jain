@@ -18,9 +18,9 @@ public class ISPManagementSystem {
         System.out.println("CID: CS111 -> NAME: DAKSH");
         System.out.println("CID: CS112 -> NAME: HARISH");
         System.out.println("CID: CS113 -> NAME: ANURAG");
+
         System.out.print("Enter CID to find customer: ");
         String CSID = sc.nextLine();
-
         try{
             findCustomer(CSID);
         } catch(CustomerNotFoundException c){
@@ -31,12 +31,12 @@ public class ISPManagementSystem {
 
         System.out.println("Enter PlanName(Not Empty): ");
         String planName = sc.nextLine();
-
         try{
             assignPlan(planName);
         } catch(IllegalArgumentException e){
             System.out.println("Runtime Error: "+ e.getMessage());
         }
+        
         System.out.println("\n-----------------------------------\\n");
 
         try{
