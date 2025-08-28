@@ -1,6 +1,5 @@
 package WEEK3.DAY1;
 
-import java.net.URLStreamHandler;
 import java.util.*;
 
 class Plan{
