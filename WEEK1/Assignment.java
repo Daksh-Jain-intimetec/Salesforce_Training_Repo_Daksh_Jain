@@ -1,6 +1,7 @@
 package WEEK1;
 
 import java.util.*;
+import java.util.Locale.Category;
 
 
 enum EmployeeCategory {
@@ -76,18 +77,30 @@ class ManagementSystem {
 
 
     public void showUsers() {
-        System.out.println("\nUsers in System:");
-        for (User u : users) System.out.println(u);
+        if(users.isEmpty()){
+            System.out.println("No user data available....");
+        } else{
+            System.out.println("\nUsers in System:");
+            for (User u : users) System.out.println(u);
+        }
     }
 
     public void showPlans() {
-        System.out.println("\nAvailable Plans:");
-        plans.forEach(System.out::println);
+        if(plans.isEmpty()){
+            System.out.println("No Plan data available....");
+        } else {
+            System.out.println("\nAvailable Plans:");
+            plans.forEach(System.out::println);
+        }
     }
 
     public void showEmployees() {
-        System.out.println("\nEmployees in System:");
-        employees.forEach(System.out::println);
+        if(employees.isEmpty()){
+            System.out.println("No employee data available...");
+        } else {
+            System.out.println("\nEmployees in System:");
+            employees.forEach(System.out::println);
+        }
     }
 }
 
@@ -95,23 +108,77 @@ public class Assignment {
     public static void main(String[] args) {
         ManagementSystem system = new ManagementSystem();
 
-
-        system.addUser(new User(1, "Daksh", "daksh@example.com"));
-        system.addUser(new User(2, "Riya", "riya@example.com"));
-
-
-        system.addPlan(new Plan(101, "Basic", 99.99));
-        system.addPlan(new Plan(102, "Premium", 199.99));
-
-
-        system.addEmployee(new Employee(201, "Arjun", EmployeeCategory.MANAGER));
-        system.addEmployee(new Employee(202, "Meena", EmployeeCategory.STAFF));
-        system.addEmployee(new Employee(203, "Karan", EmployeeCategory.INTERN));
-
-
-        system.showUsers();
-        system.showPlans();
-        system.showEmployees();
+        boolean exit = false;
+        int user_id = 0;
+        int emp_id = 0;
+        int plan_id = 0;
+        Scanner sc = new Scanner(System.in);
+        while(exit == false){
+            System.out.println("Select From option");
+            System.out.println("1. Add New User");
+            System.out.println("2. Add New Emplyoee");
+            System.out.println("3. Add New Plan");
+            System.out.println("4. Show Users");
+            System.out.println("5. Show Plan list");
+            System.out.println("6. Show Employees");
+            System.out.println("7. Exit");
+            int choice = 0;
+            try{
+                choice = sc.nextInt();
+            } catch(InputMismatchException e){
+                System.out.println(e + " : only Integer value is allowed....");
+                sc.nextLine(); // Clear the invalid input from scanner buffer
+            }
+            switch (choice) {
+                case 1: System.out.println("Enter User Name: ");
+                        String usrName = sc.next();
+                        System.out.println("Enter User mail: ");
+                        String mail = sc.next();
+                        user_id++;
+                        system.addUser(new User(user_id,usrName,mail));
+                        System.out.println("----------------------------------------------");
+                    break;
+                case 2: System.out.println("Enter Employee Name: ");
+                        String empName = sc.next();
+                        System.out.println("Enter Employee Category: ");
+                        String empCategory = sc.next().toUpperCase();
+                        emp_id++;
+                        try{
+                            EmployeeCategory category = EmployeeCategory.valueOf(empCategory);
+                            system.addEmployee(new Employee(emp_id,empName,category));
+                            System.out.println("----------------------------------------------");
+                        } catch(IllegalArgumentException e){
+                            System.out.println(e + ": Employee Category not Found!!!");
+                            System.out.println("----------------------------------------------");
+                        }
+                        
+                        break;
+                case 3: System.out.println("Enter Plan Name:");
+                        String planName = sc.next();
+                        System.out.println("Enter Plan Price: ");
+                        double price = sc.nextDouble();
+                        plan_id++;
+                        system.addPlan(new Plan(plan_id, planName, price));
+                        System.out.println("----------------------------------------------");
+                        break;
+                case 4: system.showUsers();
+                        System.out.println("----------------------------------------------");
+                        break;
+                case 5: system.showPlans();
+                        System.out.println("----------------------------------------------");        
+                        break;
+                case 6: system.showEmployees(); 
+                        System.out.println("----------------------------------------------");
+                        break;
+                case 7: exit = true;
+                        System.out.println("Closing System........................");
+                        break;
+                default:System.out.println("Enter valid choice from below options....");
+                        System.out.println("----------------------------------------------");
+                    break;
+            }
+        }     
+        sc.close(); 
     }
 }
 
