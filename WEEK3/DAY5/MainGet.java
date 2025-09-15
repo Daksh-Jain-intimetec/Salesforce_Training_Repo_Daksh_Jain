@@ -16,7 +16,7 @@ public class MainGet {
         try {
             Connection connection = DriverManager.getConnection(url, username, password);
             Statement statement = connection.createStatement();
-            String query = "select * from Customers";
+            String query = "select * from Customer";
             ResultSet resultset = statement.executeQuery(query);
 
             while(resultset.next()){

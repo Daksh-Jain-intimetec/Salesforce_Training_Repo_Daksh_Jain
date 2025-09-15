@@ -24,7 +24,7 @@ class ValidityComparator implements Comparator<Plan>{
         return o1.getValidity() - o2.getValidity();
     }
 }
-class Plan {
+public class Plan {
     private String planName = null;
     private double planPrice;
     private double speed;
