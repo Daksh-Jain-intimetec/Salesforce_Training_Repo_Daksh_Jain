@@ -5,25 +5,10 @@ package WEEK3;
 // Sorts plans based on different parameters(price low to high, speed low to high, type 2g,4g,5g)
 
 import java.util.*;
+import WEEK3.PriceComparator;
+import WEEK3.SpeedComparator;
+import WEEK3.ValidityComparator;
 
-class PriceComparator implements Comparator<Plan>{
-    @Override
-    public int compare(Plan o1, Plan o2) {
-        return Double.compare(o1.getPlanPrice(),o2.getPlanPrice());
-    };
-}
-class SpeedComparator implements Comparator<Plan>{
-    @Override
-    public int compare(Plan o1, Plan o2){
-        return Double.compare(o1.getSpeed(), o2.getSpeed());
-    }
-}
-class ValidityComparator implements Comparator<Plan>{
-    @Override
-    public int compare(Plan o1, Plan o2){
-        return o1.getValidity() - o2.getValidity();
-    }
-}
 public class Plan {
     private String planName = null;
     private double planPrice;
